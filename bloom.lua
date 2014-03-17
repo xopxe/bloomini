@@ -47,7 +47,7 @@ return function (bits, hashes)
       local s=''
       s=s..'bits='..tostring(bits)..';hashes='..tostring(hashes)..';set={'
       for k, v in pairs(set.set) do
-        s=s..'['..string.format('%d',k)..']='..string.format('%d',v)..','--print ('s:',k,v)
+        s=s..'['..string.format('%.0f',k)..']='..string.format('%.0f',v)..','--print ('s:',k,v)
       end
       s=s..'}'
       return s
